@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 169bed9d14b4b394cb5f379c2efe8af0
+  m_SerializeEntries:
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: MenuScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cd9d5380eeecbc248a73998cc78335f8
+    m_Address: Profile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6d94a17f506d184d960c04c6718e4b5
+    m_Address: SaveSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2737e8e88dea399448b4e98bdfc8a8fb
+    m_Address: Scene-Machanics-Tigers
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f588efc1c9084d140a7232fe81fcb94c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 91821c10407d80343ac6304302ef522e, type: 2}
+    - {fileID: 11400000, guid: 612c0d2a5384ad94aa34f4f4986b0b4e, type: 2}

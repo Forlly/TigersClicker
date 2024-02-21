@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1726182683, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
+  m_Name: AOTGenerationConfig
+  m_EditorClassIdentifier: 
+  automateBeforeBuilds: 0
+  deleteDllAfterBuilds: 1
+  AutomateForAllAOTPlatforms: 1
+  automateForPlatforms: 0d000000
+  lastScan: 638220321886731955
+  supportSerializedTypes:
+  - TypeName: Project.Mechanics.Interfaces.IMechanicsDescriptor, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Boolean, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Project.Dialogues.MessageData,
+      Assembly-CSharp],[System.Collections.Generic.List`1[[Project.Learning.Selecting.ISelectableObject,
+      Assembly-CSharp]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Project.Dialogues.MessageListener,
+      Assembly-CSharp],[Project.Learning.Selecting.ISelectableObject[], Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.GameObject, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Mechanics.MatchThree.Interfaces.IBlocksController, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Project.Dialogues.MessageData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Project.Dialogues.MessageListener,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Learning.Selecting.ISelectableObject, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Learning.Selecting.ISelectableObject[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Mechanics.MatchThree.Interfaces.ITile, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[Project.Learning.Selecting.ISelectableObject,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Dialogues.MessageData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Dialogues.MessageListener, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Dialogues.MessageListenerType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.ObjectEqualityComparer`1[[Project.Dialogues.MessageData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.ObjectEqualityComparer`1[[Project.Dialogues.MessageListener,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Project.Mechanics.MatchThree.Core.TileLayoutGroup, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.TimeSpan, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Transform, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
