@@ -13,15 +13,21 @@ namespace Project
         public Meat Meat { get => _meat; set => _meat = value;}
         public bool MusicIsActive { get => _musicIsActive; set => _musicIsActive = value; }
         public bool SoundsIsActive { get => _soundsIsActive; set => _soundsIsActive = value; }
-        public float MusicValue { get => _musicValue; set => _musicValue = value; }
-        public float SoundsValue { get => _soundsValue; set => _soundsValue = value; }
+        public int CountOfBanks { get => _countOfBanks; set => _countOfBanks = value; }
+        public int CountOfButcheries { get => _countOfButcheries; set => _countOfButcheries = value; }
+        public int CountOfTigers { get => _countOfTigers; set => _countOfTigers = value; }
+        public bool IsIntroductionCompleted { get => _isIntroductionCompleted; set => _isIntroductionCompleted = value; }
+        public bool IsLearningCompleted { get => _isLearningCompleted; set => _isLearningCompleted = value; }
 
         [SerializeField] private Coins _coins;
         [SerializeField] private Meat _meat;
+        [SerializeField] private bool _isIntroductionCompleted = false;
+        [SerializeField] private bool _isLearningCompleted = false;
         [SerializeField] private bool _musicIsActive = true;
         [SerializeField] private bool _soundsIsActive = true;
-        [SerializeField] private float _musicValue = 1;
-        [SerializeField] private float _soundsValue = 1;
+        [SerializeField] private int _countOfBanks = 1;
+        [SerializeField] private int _countOfButcheries = 1;
+        [SerializeField] private int _countOfTigers = 1;
         private ISaveSystem _saveSystem;
 
         private static readonly Lazy<Task<IProfile>> s_instance =

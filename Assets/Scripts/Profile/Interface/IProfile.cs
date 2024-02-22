@@ -8,7 +8,10 @@ namespace Project
         Meat Meat { get; }
         bool MusicIsActive { get; set; }
         bool SoundsIsActive { get; set; }
-        float MusicValue { get; set; }
-        float SoundsValue { get; set; }
+        int CountOfBanks { get; set; }
+        int CountOfButcheries { get; set; }
+        int CountOfTigers { get; set; }
+        bool IsIntroductionCompleted { get; set; }
+        bool IsLearningCompleted { get; set; }
     }
 }

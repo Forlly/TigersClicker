@@ -32,7 +32,7 @@ namespace DefaultNamespace.UI
             string[] suffixes = { "", "K", "M", "B", "T", "P", "E" };
             int suffixIndex = 0;
             
-            while (number >= 1000 && suffixIndex < suffixes.Length - 1)
+            while (number >= 100000 && suffixIndex < suffixes.Length - 1)
             {
                 number /= 1000;
                 suffixIndex++;

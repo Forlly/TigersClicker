@@ -7,8 +7,8 @@ namespace DefaultNamespace.UI
     public class UIButton : MonoBehaviour
     {
         [SerializeField] private bool _isShowButton;
-        [SerializeField] private UIView _view;
-        [SerializeField] private List<UIView> _closedView = new List<UIView>();
+        [SerializeField] private UIViewBase _view;
+        [SerializeField] private List<UIViewBase> _closedView = new List<UIViewBase>();
         private Button _button;
 
         private void Start()

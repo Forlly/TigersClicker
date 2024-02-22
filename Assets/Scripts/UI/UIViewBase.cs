@@ -33,7 +33,7 @@ namespace DefaultNamespace.UI
                 _rectTransform.DOScale(Vector3.one, _fadeDuration).SetEase(Ease.OutBack);
             }
         }
-        public void Hide()
+        public virtual void Hide()
         {
             if (_backgroundImage != null)
             {
@@ -43,6 +43,11 @@ namespace DefaultNamespace.UI
             {
                 _rectTransform.DOScale(Vector3.zero, _fadeDuration).SetEase(Ease.InBack);
             }
+        }
+        
+        public virtual void HideWithFade(CanvasGroup canvasGroup)
+        {
+            canvasGroup.DOFade(0, _fadeDuration).OnComplete(() => _rectTransform.localScale = Vector3.zero);
         }
         public void InstantShow()
         {

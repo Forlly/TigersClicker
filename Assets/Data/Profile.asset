@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Profile
   m_EditorClassIdentifier: 
   _coins:
-    _count: 11150
+    _count: 0
   _meat:
-    _count: 17000
-  _musicIsActive: 0
+    _count: 0
+  _isIntroductionCompleted: 0
+  _isLearningCompleted: 0
+  _musicIsActive: 1
   _soundsIsActive: 1
-  _musicValue: 1
-  _soundsValue: 1
+  _countOfBanks: 1
+  _countOfButcheries: 1
+  _countOfTigers: 1

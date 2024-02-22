@@ -71,12 +71,12 @@ namespace Sounds
         }
         public void TurnOnMusic()
         {
-            _backgroundMusicAudioSource.enabled = true;
+            _backgroundMusicAudioSource.volume = 1;
             _profile.MusicIsActive = true;
         }
         public void TurnOffMusic()
         {
-            _backgroundMusicAudioSource.enabled = false;
+            _backgroundMusicAudioSource.volume = 0;
             _profile.MusicIsActive = false;
         }
         

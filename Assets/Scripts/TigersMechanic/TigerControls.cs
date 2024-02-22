@@ -1,6 +1,8 @@
+using System;
 using DefaultNamespace.Events;
 using Project;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace DefaultNamespace.TigersMechanic
 {
@@ -18,7 +20,7 @@ namespace DefaultNamespace.TigersMechanic
         private bool isAccelerating = false;
         private float _originalY;
         private float _originalSpeed;
-        private float _accelerationEndTime; 
+        private float _accelerationEndTime;
 
         void Awake()
         {
@@ -26,10 +28,24 @@ namespace DefaultNamespace.TigersMechanic
             _originalY = transform.position.y;
             _originalSpeed = _speed;
         }
+
+        public void SetAngle(float angle)
+        {
+            _angle = angle;
+        }
         public void SetCenterPoint(Transform center)
         {
             _centerPoint = center;
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Building"))
+            {
+                EventBus.Instance.Send(new OnGetBonusFromBuilding(other.gameObject.GetComponent<Building>().GetData(), other.gameObject.transform));
+            }
+        }
+
         private void IncreaseSpeed(OnClickInputManager e)
         {
             _speed = _originalSpeed * Random.Range(_minAccelerationRatio, _maxAccelerationRatio);

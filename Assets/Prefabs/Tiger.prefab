@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8976003018343005234}
   - component: {fileID: 8976003018343005237}
   - component: {fileID: 8976003018343005236}
-  - component: {fileID: 8976003018343005235}
   m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
@@ -84,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8976003018343005235
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8976003018343005233}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8976003019262570939
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,6 +96,7 @@ GameObject:
   - component: {fileID: 8976003019262570943}
   - component: {fileID: 8976003019262570942}
   - component: {fileID: 8976003019262570941}
+  - component: {fileID: 3047494986432331593}
   m_Layer: 6
   m_Name: Tiger
   m_TagString: Untagged
@@ -217,3 +204,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3047494986432331593
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976003019262570939}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1

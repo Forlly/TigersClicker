@@ -44,11 +44,11 @@ namespace DefaultNamespace.TigersMechanic
             return isFull ? CreateNewObject() : null;
         }
         
-        public  void TurnOfObject(TigerControls mergeableObj)
+        public  void TurnOfObject(TigerControls obj)
         {
             for (int i = 0; i < amountPool; i++)
             {
-                if (mergeableObj == _poolObjects[i])
+                if (obj == _poolObjects[i])
                 {
                     _poolObjects[i].gameObject.SetActive(false);
                 }

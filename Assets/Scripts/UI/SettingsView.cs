@@ -1,3 +1,4 @@
+using DefaultNamespace.Events;
 using Project;
 using Project.DependencyInjection;
 using Sounds.Interface;
@@ -14,6 +15,7 @@ namespace DefaultNamespace.UI
         [SerializeField] private SettingsButton _soundOff;
         [SerializeField] private Sprite _backgroundTurnOn;
         [SerializeField] private Sprite _backgroundTurnOff;
+        [SerializeField] private bool _isPanelInMainMenu = false;
         private ISoundManager _soundManager;
         private IProfile _profile;
 
@@ -29,6 +31,20 @@ namespace DefaultNamespace.UI
 
             _profile = await DI.GetAsync<IProfile>();
             SetButtonsValue();
+            
+            if (_isPanelInMainMenu)
+            {
+                EventBus.Instance.AddListener<OnChangeMusicValue>(ChangeMusicValue);
+                EventBus.Instance.AddListener<OnChangeSoundsValue>(ChangeSoundsValue);
+            }
+        }
+        private void ChangeMusicValue(OnChangeMusicValue e)
+        {
+            OnMusicToggleChanged(e.Value);
+        }
+        private void ChangeSoundsValue(OnChangeSoundsValue e)
+        {
+            OnSoundsToggleChanged(e.Value);
         }
 
         private void SetButtonsValue()
@@ -81,6 +97,11 @@ namespace DefaultNamespace.UI
                 _soundManager.TurnOffMusic();
             }
             UpdateButtonUI(_musicOn, _musicOff, newValue);
+           
+            if (!_isPanelInMainMenu)
+            {
+                EventBus.Instance.Send(new OnChangeMusicValue(newValue));
+            }
         }
 
         private void OnSoundsToggleChanged(bool newValue)
@@ -94,6 +115,10 @@ namespace DefaultNamespace.UI
                 _soundManager.TurnOffSounds();
             }
             UpdateButtonUI(_soundOn, _soundOff, newValue);
+            if (!_isPanelInMainMenu)
+            {
+                EventBus.Instance.Send(new OnChangeSoundsValue(newValue));
+            }
         }
     }
 }
